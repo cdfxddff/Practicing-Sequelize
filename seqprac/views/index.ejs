@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1><%= title %> </h1>
+        <form action="/" method="POST">
+            <input type="text" name="text">
+            <input type="submit" value="書き込み">
+        </form>
+        <!-- <%= texts %>  -->
+        <div>
+            <ul>
+                <!-- <% for(let i=0;i<texts.length;i++) {%>
+                    <li><%= texts[i].text %> </li>
+                    <form action="/delete" method="POST">
+                        <input type='hidden' name="id" value="<%= texts[i].id %>">
+                        <input type="submit" value="消去">
+                    </form>  -->
+            </ul>
+        </div>
+    </body>
+</html>
