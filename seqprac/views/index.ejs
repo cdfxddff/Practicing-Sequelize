@@ -10,15 +10,15 @@
             <input type="text" name="text">
             <input type="submit" value="書き込み">
         </form>
-        <!-- <%= texts %>  -->
         <div>
             <ul>
-                <!-- <% for(let i=0;i<texts.length;i++) {%>
+                <% for(let i=0;i < texts.length;i++) {%>
                     <li><%= texts[i].text %> </li>
                     <form action="/delete" method="POST">
                         <input type='hidden' name="id" value="<%= texts[i].id %>">
                         <input type="submit" value="消去">
-                    </form>  -->
+                    </form> 
+                <% } %> 
             </ul>
         </div>
     </body>

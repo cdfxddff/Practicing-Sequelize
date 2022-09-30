@@ -1,11 +1,11 @@
 const {Sequelize,DataTypes}=require('sequelize');
 
-const sequelize=new Sequelize('shoppingapp','postgres','password',{
+const sequelize=new Sequelize('seq','postgres','password',{
     host:'localhost',
     dialect:'postgres'
 });//即時関数の前の処理では;が必要
 
-const Text=sequelize.define('Text',{
+const Text=sequelize.define('text',{
     text:{
         type:DataTypes.STRING,
         allowNull:false
@@ -30,7 +30,7 @@ async function dbdrop(inp_id) {
 
 async function dbsel() { 
     const data = await Text.findAll();
-    return JSON.stringify(data);
+    return data;
  }
 
 module.exports={
